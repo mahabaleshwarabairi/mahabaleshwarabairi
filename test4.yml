@@ -1,0 +1,10 @@
+--- 
+  - name: multiple commands
+    hosts: localhost
+    tasks: 
+     - name: multiple commands
+       command: "{{ item }}"
+       with_items:
+         - cp /root/test3.yml /tmp
+         - mv /tmp/test3.yml /tmp/test3_maha.yml
+...

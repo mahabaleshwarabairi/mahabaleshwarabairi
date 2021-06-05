@@ -1,0 +1,19 @@
+---
+ - name: execute sh file in remote node
+   hosts: localhost
+   tasks:
+    - name: sh execute
+      copy:
+        src: disk_space.sh
+        dest: /tmp
+        mode: '0755'
+    - name: execute shell
+      shell: /tmp/disk_space.sh 
+   
+    - name: copy remote to local
+      fetch:
+        src: /tmp/out.txt
+        dest: /opt/maha/
+        flat: yes
+
+...

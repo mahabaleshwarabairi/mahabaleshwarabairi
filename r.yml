@@ -1,0 +1,12 @@
+---
+ - name: file copy from remote node to my location
+   hosts: localhost
+   tasks: 
+    - name: copy remote to local
+      fetch:
+        src: /root/dsk.yml
+        dest: /opt/maha/
+        flat: yes
+...
+
+

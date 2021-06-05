@@ -1,0 +1,10 @@
+---
+ - name: hello welcome to my playbook
+   hosts: localhost
+   tasks: 
+   - name: install package
+     yum: name=nfs state=latest
+   - name: start service
+     service: name=nfs state=started
+...
+    

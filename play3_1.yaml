@@ -1,0 +1,24 @@
+---
+- name: This sets up an httpd webserver
+  hosts: gog,local_h
+  vars:
+    name: "httpd" 
+    package: httpd
+    test_dir: /etc
+
+  tasks:
+  - name: Install the httpd apps
+    yum: name={{ package }} state=present
+    when: ansible_os_family == "RedHat"
+  - name: Install the httpd apps
+    apt: name={{ package }} state=present
+    when: ansible_os_family == "Ubuntu"
+  - name: start the httpd service
+    service: name={{ package }} state=started
+    when: ansible_os_family == "RedHat"
+  - name: list /etc
+    shell: "ls {{ test_dir }}"
+    register: dir_out
+  - debug: var={{item}}
+    with_items: dir_out.stdout_lines
+...

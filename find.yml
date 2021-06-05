@@ -1,0 +1,18 @@
+---
+ - name: find
+   hosts: localhost
+   tasks:
+    - name: find command
+      find:
+       paths: /etc/
+       patterns: host*
+       file_type: file
+      register: findout
+    - name: outfile
+      debug:
+       var: findout
+    - name:  how output looks with loop
+      debug:
+      with_items:
+        - "{{ findout }}"
+

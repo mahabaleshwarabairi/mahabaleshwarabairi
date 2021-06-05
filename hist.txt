@@ -1,0 +1,1000 @@
+git push -u origin master
+history 
+ls -ltrh
+touch test.txt
+git status
+git add . -all
+git add . --all
+git status
+git commit -m "added test file"
+get push -u origin master
+git push -u origin master
+ls -ltrh
+git pull -u origin master
+ls -ltrh
+vim test.txt 
+git push origin maha-release
+cd ..
+mkdir maha-release
+cd maha-release/
+git push origin maha-release
+exit
+cd maha-release/
+git init 
+git clone ssh git@github.com:mahabaleshwarabairi/maha-test.git
+git clone  git@github.com:mahabaleshwarabairi/maha-test.git
+ls -ltrh
+cd maha-test/
+ll
+git status
+cd ..
+git statius
+git status
+cd maha-test/
+git status
+git add .
+ll
+git status
+touch maha.txt
+git add .
+touch maha.txt
+git status
+git commit -m "added maha"
+git status
+git push 
+cd ..
+cd nginx/
+vim Dockerfile 
+docker-compose docker-compose.yml --build 
+docker-compose docker-compose.yml --build  up 
+history 
+history | grep com
+docker-compose up -build
+docker-compose up --build -d
+vim Dockerfile 
+docker-compose up --build -d
+history 
+vim Dockerfile 
+docker-compose up --build -d
+vim Dockerfile 
+docker-compose up --build -d
+ls -ltrh /root/.ssh/id_rsa
+vim Dockerfile 
+ls -ltrh /root/.ssh/id_rsa
+docker-compose up --build -d
+vim Dockerfile 
+docker-compose up --build -d
+ls -ltrh /root/.ssh/
+date
+vim Dockerfile 
+docker-compose up --build -d
+systemctl --type=service
+cd /etc/systemd/
+ls -ltrh
+cd system/
+ll
+ls -ltrh
+vim /usr/lib/systemd/system/avahi-daemon.service
+python
+yum update python
+yum install python*
+cd /
+cd ~
+mkdir python
+cd python/
+vim 1.py
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+vim 1.py 
+python 1.py 
+docker volume ls
+docker volume inspect 2504e9611effbf0682cc43def8ad2f71c029a7bd6fcf533cf21fbe6173925b03
+docker inspect nginx
+docker ps -a
+docker ps -a -f 'Exited'
+docker ps -a -f='Exited'
+docker ps -a
+cd ~
+cd nginx/
+ls -ltrh
+vim Dockerfile 
+docker-compose up --build -d
+docker ps -a
+docker rm e798faeb5f11 d0b7fe6e44d2
+docker ps -a
+docker rm f769bb9ec147 bfeceddd7074 0bb2254bca78 bec5c3071831
+docker ps -a
+docker top bac2f1b8c477
+docker stats bac2f1b8c477
+docker images
+systemctl status docker
+docker-compose down
+docker-compose up --build -d -t mahabaleshwarabairi/my_image
+docker-compose up --build -t mahabaleshwarabairi/my_image 
+docker-compose up --build t mahabaleshwarabairi/my_image 
+docker-compose up --build -t mahabaleshwarabairi:my_image 
+docker-compose build -t mahabaleshwarabairi:my_image up 
+docker-compose --build -t mahabaleshwarabairi:my_image up 
+docker-compose --build  up -t mahabaleshwarabairi:my_image 
+docker build -t myimage:001
+docker build -f Dockerfile -t myimage:001
+docker image
+docker image ls
+docker build -t nginx_ubuntu:latest_maha 
+cat Dockerfile 
+docker build -f Dockerfile 
+docker build --help
+docker build --tag name:tag -f Dockerfile 
+docker build --tag name:tag -f Dockerfile .
+docker images ps
+docker images ls
+docker images 
+docker rm name:tag
+docker rmf name:tag
+docker --help
+docker rm ---help
+docker rm --help
+docker rm -f --help
+docker images
+docker rm -f 3f1844ddbc99
+docker rmi -f name
+docker rmi -f name:tag
+docker images
+docker rmi -f none:none
+docker rmi -f <none>:<none?
+docker rmi -f <none>:<none>
+docker image -q
+docker image -ls
+docker images -q
+docker rmi 693d631193f9 3f3750ae7f78
+docker images -ls
+docker images 
+docker rmi 2f850aee1793
+docker rmi 30c71a770008
+docker rmi bba149ad0faa
+docker images 
+docker rmi 37c17090adf8 bfb94e083118 
+docker images 
+df -h
+vim Dockerfile.dev
+docker build -f Dockerfile.dev –t=”mywebserver” 
+docker build -f Dockerfile.dev –t=”mywebserver” . 
+docker build -f Dockerfile.dev –
+docker build -f Dockerfile.dev
+docker build -f Dockerfile.dev .
+docker build -f Dockerfile.dev –t=mywebserver . 
+docker build -f Dockerfile.dev –t='mywebserver' . 
+docker build --help
+docker build -f Dockerfile.dev –t 'mywebserver' . 
+docker info
+docker info | grep -i volume
+docker info | grep au
+docker ps
+docker ps -a
+docker image
+docker images
+docker run -it docker.io/nginx /bin/bash -d
+docker run -d docker.io/nginx /bin/bash 
+docker ps -a
+docker rmi bada9a1a3c4c 644aee5d8efe
+docker ps -a
+docker kill  bada9a1a3c4c
+docker rmf bada9a1a3c4c
+docker rm -f bada9a1a3c4c
+docker rm -f 644aee5d8efe
+docker ps -a
+docker images 
+docker run -d -f 80:80  docker.io/nginx
+docker run -d -p 80:80  docker.io/nginx
+docker ps -a
+pwd
+ll
+docker ps -a
+docker stop bf061cb55ae3
+docker run -d -p 80:80 -v /root/nginx:/var/www/html  docker.io/nginx 
+docker ps -a
+docker -it b991ce435416 bin/bash
+docker run -it b991ce435416 bin/bash
+docker exec -it b991ce435416 bin/bash
+vim index.html 
+pwd
+docker exec -it b991ce435416 bin/bash
+docker info
+docker ps -a
+docker inspect b991ce435416
+docker ps -a
+docker stop b991ce435416
+docker run -d -p 80:80 -v /root/nginx:/usr/share/nginx/html  docker.io/nginx 
+ls /root/nginx
+docker exec -it b991ce435416 bin/bash
+cd /usr/share/nginx/html
+cd /usr/share/
+ll
+docker exec -it b991ce435416 bin/bash
+docker ps -a
+docker exec -it d840cbcc3d86 bin/bash
+docker volume create --name=vol --opt o=size = 100m
+docker volume create --help
+docker volume create size=100m
+docker volume create --name=myvol size=100m
+docker volume create --name= myvol size=100m
+docker volume create --help
+docker volume create -o --help
+docker volume create –-name = demo –opt o = size = 100m 
+docker volume create –-name =demo –opt o = size = 100m 
+docker volume create –-name =d size = 100m 
+docker volume create –-name=volumename –-opt size = 100m
+docker volume create –-name=volumename size = 100m
+docker volume create –-name=volumename 
+docker volume create –-name=my volumename 
+docker volume create –-name=volumename --opt o size=100m
+docker volume create –-name=volumename --opt size=100m
+docker volume create –-name=aa --opt size=100m
+docker volume create –-name=aa11 --opt size=100m
+docker volume create –-name="aa11" --opt size=100m
+docker volume create hello
+docker volume ls 
+cd ~
+cd nig
+cd nginx/
+ll
+docker container create --name dummy -v myvolume:hello
+docker volume ls
+docker container create --name hello -v myvolume:maha
+docker volume --help
+docker volume rm hello
+ls -ltrh
+history 
+docker build -f Dockerfile .
+docker images ls
+docker images 
+docker images | grep ecc69e31f914
+history 
+docker run -d -p 80:80 -v /root/nginx:/usr/share/nginx/html ecc69e31f914
+docker -ps
+docker ps -a
+docker stop d840cbcc3d86
+docker run -d -p 80:80 -v /root/nginx:/usr/share/nginx/html ecc69e31f914
+docker exec -it ecc69e31f914 /bin/bash
+docker ps -a
+docker exec -it 7770143fe37d /bin/bash
+docker ps -a
+docker stop 7770143fe37d
+docker run -d -p 80:80 -v /root/nginx:/var/www/html ecc69e31f914
+docker ps 849acae63f3d6b5fea156b8dcebe4262cca82e09f75810422677fe16e9f72a49
+docker ps 849acae63f3d6b5
+docker ps --help
+docker ps -a
+docker stop 849acae63f3d
+docker ps -a
+history | grep create
+docker volume create mydata
+docker volume info
+docker volume ls
+docker network ls
+docker network inspect bridge
+docker ps -a
+docker rmi 849acae63f3d 7770143fe37d d840cbcc3d86 b991ce435416 bf061cb55ae3
+docker rm -f  849acae63f3d 7770143fe37d d840cbcc3d86 b991ce435416 bf061cb55ae3
+docker ps -a
+docker stop 6df4aaea7e03
+docker ps -a
+docker start  6df4aaea7e03
+docker ps -a
+history 
+df -h
+docker pull mango
+docker pull mongo
+docker run -d -it docker.io/mongo
+docker ps -a
+docker exec -it a9dde71c6b66 /bin/bash
+docker inspect a9dde71c6b66
+docker exec -it a9dde71c6b66 /bin/bash
+docker ps -a
+docker stop a9dde71c6b66
+docker stop 6df4aaea7e03
+history | grep html
+docker run -d -p 80:80 -v /root/nginx:/usr/share/nginx/html:ro ecc69e31f914
+docker ps -a
+docker stop 196e30d42733
+docker run -d -p 80:80 -v /root/nginx:/var/www/html:ro ecc69e31f914
+docker exec -it 90f5044cb01e /bin/bash
+docker ps -a
+docker stop 90f5044cb01e
+docker run -d -p 80:80 -v /root/nginx:/var/www/html:rw ecc69e31f914
+docker ps -a
+docker exec -it cb3a5c115986 /bin/bash
+cd /opt/maha/
+ll
+docker ps -a
+docker cp index.html  2f7ca0f2ab6e:/var/www/html
+docker ps -a
+docker stop cb3a5c115986
+docker ps -a
+cd nginx/
+ll
+mkdir /opt/maha
+cp -vf index.html /opt/maha/
+chmod -R 777 /opt/maha/
+history 
+docker pa -a
+docker ps -a
+docker run -d -p 80:80 -v /opt/maha:/var/www/html:rw cb3a5c115986
+image ps
+images 
+docker images
+history 
+docker images
+docker run -d -p 80:80 -v /opt/maha:/var/www/html:rw ecc69e31f914
+cd /opt/maha/
+vim index.html 
+docker pa -a
+docker ps -a
+docker stop a1fc98ed7411
+docker volume ls
+docker run -d -p 80:80 mount mydata:/var/www/html:rw ecc69e31f914
+docker run -d -p 80:80 -v mount mydata:/var/www/html:rw ecc69e31f914
+docker run -d -p 80:80 --mount mydata:/var/www/html:rw ecc69e31f914
+docker run -d -p 80:80 -- mount mydata:/var/www/html:rw ecc69e31f914
+df -h
+docker ps -a
+history 
+docker run -d -p 80:80 --mount -v  mydata:/var/www/html:rw ecc69e31f914
+docker run -d -p 80:80 mount -v  mydata:/var/www/html:rw ecc69e31f914
+docker run -d -p 80:80 --mount source=myvol2,target=/var/www/html:rw ecc69e31f914
+docker run -d -p 80:80 --mount source=myvol2,target=/var/www/html ecc69e31f914
+docker volume ls
+docker images
+docker run -d --name devtest --mount source=mydata,target=/var/www/html ecc69e31f914
+docker run -d --name devtest --mount -v  source=mydata,target=/var/www/html ecc69e31f914
+docker run -d --name devtest -v  source=mydata,target=/var/www/html ecc69e31f914
+docker run -d --name devtest -v mydata:/var/www/html ecc69e31f914
+history | grep mydata
+docker inspect mydata
+docker ps -a
+ls
+docker cp index.html 0f6261ac2926:/var/www/html
+docker exec -it 0f6261ac2926 /bin/bash
+docker cp index.html 0f6261ac2926:/tmp
+docker exec -it 0f6261ac2926 /bin/bash
+docker ps -a
+docker stop 0f6261ac2926
+docker start 0f6261ac2926
+docker pa a
+docker ps -a
+docker exec -it 0f6261ac2926 /bin/bash
+ls -ltrh
+pwd
+docker ps -a
+docker exec -it 0f6261ac2926 /bin/bash
+docker ps -a
+docker stop 0f6261ac2926
+docker run -d -p80:80 --name devtest -v mydata:/var/www/html ecc69e31f914
+docker run -d -p80:80 --name devtest1 -v mydata:/var/www/html ecc69e31f914
+vim index.html 
+df -h
+cd /run/media/root/VBox_GAs_6.0.14
+ls
+cd /tmp
+init 0
+ip add
+ls -ltrh
+cd python/
+ll
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 2.py
+python 2.py 
+vim 3.py
+python 3.py 
+vim 3.py
+python 3.py 
+vim 3.py
+python 3.py 
+vim 3.py 
+python 3.py 
+vim 3.py 
+python 3.py 
+vim 3.py 
+python 3.py 
+vim 3.py 
+python 3.py 
+vim 3.py 
+python 3.py 
+vim 3.py 
+python 3.py 
+vim 3.py 
+python 3.py 
+vim 3.py 
+python 3.py 
+vim 3.py 
+python 3.py 
+vim 3.py 
+python 3.py 
+vim 3.py 
+vim 4.py
+python 4.py
+vim 4.py
+python 4.py
+vim 4.py
+python 4.py
+vim 4.py
+python 4.py
+vim 4.py
+python 4.py
+vim 4.py
+python 4.py
+vim 4.py
+python 4.py
+vim 4.py
+python 4.py
+vim 4.py
+python 4.py
+vim 4.py
+python 4.py
+vim 4.py
+init 0
+ip add
+ipadd
+ip add
+ip add | grep inet
+cd python/
+ls -ltrh
+vim set.py
+ps -ef | grep java
+cd python/
+ls -ltrh
+vim set.py 
+python set.py 
+vim set.py 
+python set.py 
+vim set.py 
+python set.py 
+vim set.py 
+python set.py 
+vim set.py 
+python set.py 
+vim set.py 
+python set.py 
+vim set.py 
+python set.py 
+vim set.py 
+python set.py 
+vim set.py 
+python set.py 
+vim set.py 
+python set.py 
+vim set.py 
+python set.py 
+cd ~
+mkdir my_flask_app
+cd my_flask_app
+python3 -m venv venv
+source venv/bin/activate
+pip install Flask
+python -m Flask --version
+python36 -m Flask --version
+python3.7 -m Flask --version
+python3.6 -m Flask
+python3.6 -m Flask --version
+cd /opt/rh/rh-python36/root/usr/bin/
+ls -ltrh
+python3.6 -m Flask --version
+python3.6  --version
+cd ~
+ls
+cd my_flask_app/
+ll
+cd venv/
+ll
+cd .
+vim hello.py
+export FLASK_APP=hello
+flask run
+cd ~
+cd python/
+ll
+cat w2.py
+ls -ltrh
+cat s1.py
+python3.7 s1.py
+python2.7 s1.py
+cat s1.py
+history 
+exit
+ping google.com
+yum install gcc openssl-devel bzip2-devel libffi-devel
+cd /usr/src/
+wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
+tar xzf Python-3.7.4.tgz
+cd Python-3.7.4/
+./configure --enable-optimizations
+make altinstall
+python3.7 -V
+python -V
+python3.7 -V
+yum install nginx
+yum install maria
+yum install mariadb*
+df -h
+ps -ef | grep -i maria
+systemctl status maria
+systemctl status maria*
+systemctl --list
+systemctl list-units
+chkconfig --list 
+systemctl list-unit-files
+systemctl list-unit-files| grep -i maria
+systemctl status mariadb.service
+systemctl start  mariadb.service
+systemctl status mariadb.service
+mysql -uroot
+/usr/bin/mysqladmin -u root password 'maha@123'
+mysql -uroot
+mysql -uroot -pmaha@123
+systemctl list-unit-files| grep -i ngix
+systemctl list-unit-files| grep -i ng
+systemctl status nginx.service
+systemctl start  nginx.service
+systemctl status nginx.service
+ifconfig 
+yum install centos-release-scl
+yum install rh-python36
+scl enable rh-python36 bash
+history 
+pip install gunicorn flask
+cd ~
+ll
+cd my_flask_app/
+ll
+cd venv/
+ll
+vim guni.py
+python3.7 guni.py 
+ll
+export FLASK_APP=hello
+flask run
+export FLASK_APP=guni
+flask run
+cd ..
+vim wsgi.py
+mkdir my_flask_app
+cd my_flask_app/
+gunicorn --bind 0.0.0.0:8000 wsgi
+cp -vf ../wsgi.py .
+gunicorn --bind 0.0.0.0:8000 wsgi
+ip add
+init 6
+ls -ltrh
+cd my_flask_app/
+ll
+cd venv/
+ll
+history 
+ll
+export FLASK_APP=guni
+flask run
+cd ..
+ll
+cd venv/
+ll
+vim guni.py
+cd ..
+ll
+cd venv/
+ll
+cp -vf guni.py .
+cp -vf guni.py .../
+ls -ltrh
+cp -vf guni.py ../
+cd .
+cd ..
+ll
+vim guni.py
+python3.7 guni.py
+python3.7
+ping www.google.con
+ping www.google.com
+history | grep pip
+pip3.7 install Flask
+ls -ltrh
+cd my_flask_app/
+ll
+pip3.7 install Flask
+history | grep guni
+ll
+python3.7
+ll
+ifconfig 
+firewall-cmd
+firewall-cmd --state
+systemctl stop firewalld
+firewall-cmd --state
+python3.7 guni.py 
+/etc/systemd/system/
+cd /etc/systemd/system/
+ls -ltrh
+vim app.service
+ls -ltrh ~
+vim app.service
+cd ~/my_flask_app/
+ll
+vim wsgi.py
+ls -ltrh
+cd /etc/nginx/sites-available
+mkdir /etc/nginx/sites-available
+cd /etc/nginx/sites-available
+ll
+vim app
+ls -ltrh /root/
+vim app
+vim /etc/nginx/nginx.conf
+cd etc/nginx/
+cd /etc/nginx/
+ll
+vim proxy_params
+ls /etc/nginx/sites-enabled
+mkdir /etc/nginx/sites-enabled
+ln -s /etc/nginx/sites-available/app  /etc/nginx/sites-enabled
+cd ~
+ls -ltrh
+cd my_flask_app/
+ll
+vim wsgi.py 
+vim guni.py
+systemctl start app
+systemctl status app
+ls -ltrh
+cd my_flask_app/
+ll
+cd ..
+ls -ltrh
+rm -rvf my_flask_app/
+ll
+which gunicorn
+cd /etc/systemd/system/
+ll
+vim app.service 
+systemctl start app
+systemctl daemon-reload
+systemctl start app
+systemctl status app
+systemctl status nginx
+systemctl start nginx
+systemctl status nginx.service
+/usr/sbin/nginx -t
+cd /etc/nginx/
+ll
+cd default.d/
+ll
+cd ..
+ll
+cd conf.d/
+ll
+cd ..
+vim nginx.conf
+systemctl start nginx.service
+/usr/sbin/nginx -t
+vim /etc/nginx/nginx.conf
+cd /var/log/nginx/
+ll
+vim error.log 
+cd /etc/nginx/
+ll
+cd sites-
+cd sites-enabled
+ll
+cd ..
+cd sites-available
+ll
+chmod 755 app 
+systemctl start nginx.service
+systemctl start nginx.
+systemctl start nginx
+journalctl -xe
+chkconfig --list 
+systemctl list-unit-files | frep -i selinux
+systemctl list-unit-files | grep -i selinux
+systemctl list-unit-files
+sestatus
+setenforce 0
+sestatus
+vim /etc/selinux/config 
+journalctl -xe
+cat /var/log/audit/audit.log | grep nginx | grep denied | audit2allow -M mynginx
+semodule -i mynginx.pp
+systemctl start nginx.service
+systemctl status nginx.service
+ls -ltrh
+vim app 
+systemctl restart app
+systemctl restart nginx.service
+journalctl -xe
+systemctl stop app
+systemctl stop nginx.service
+systemctl start  nginx.service
+journalctl -xe
+nginx -t
+cd ..
+ls -lrth
+chmod -R 755 proxy_params 
+systemctl start nginx
+journalctl -xe
+systemctl status nginx
+systemctl status app
+netstat -antulp | grep 8090
+init 6
+cd /var/log/n
+cd /var/log/
+ll
+cd nginx/
+ll
+vim error.log 
+tailf error.log 
+history 
+systemctl status nginx
+systemctl start nginx
+systemctl status nginx
+systemctl start app
+systemctl status app
+systemctl startus firewalld
+systemctl status firewalld
+systemctl stop firewalld
+ifconfig 
+systemctl status app
+cd /root/my_flask_app/
+ls
+ls -lrth
+vim error.log 
+ls
+systemctl stop app
+mv guni.py app.py
+vim wsgi.py
+systemctl start app
+systemctl status app
+cd /var/log/nginx/
+ls lrth
+ls -lrth
+vim error.log 
+cd /root/my_flask_app/
+ls -lrth
+cd ../
+chmod -R 755 my_flask_app/
+systemctl restart app
+systemctl status app
+cd /etc/nginx/sites-available/
+ls
+ls -lrth
+vim app 
+cd ../
+ls
+vim nginx.conf
+cd /etc/systemd/system/
+ls
+vim app.service 
+systemctl stop nginx
+systemctl stop app
+cd /root/
+ls
+mv -r my_flask_app /opt/
+mv my_flask_app /opt/
+ls
+systemctl daemon-reload
+systectl stop app
+systemctl stop app
+systemctl stop nginx
+systemctl start nginx
+chmod -R 755 /opt/my_flask_app/
+systemctl start nginx
+journalctl -xe
+init 6
+history 
+systemctl start nginx
+systemctl stop app
+systemctl stop firewalld
+cd /opt
+ls -ltrh
+cd my_flask_app/
+ls -ltrh
+vim error.log
+vim /var/log/nginx/error.log 
+cd /opt/my_flask_app/
+ls
+vim app.py
+vim wsgi.py
+cd /etc/systemd/system/
+ls
+vim app.service 
+systemctl daemon-reload
+systemctl stop nginx
+systemctl stop app
+systemct stop firewalld
+systemctl stop firewalld
+systecmtl start nginx
+systemctl start nginx
+systemctl stop nginx
+systemctl start nginx
+netstat -antulp | grep 8090
+ps -ef | grep nginx
+chkconfig --list | grep nginx
+systemctl list-unit-files
+systemctl list-unit-files | grep nginx
+systemctl list-unit-files | grep master
+systemctl list-unit-files | grep -i master
+init 6
+netstat -antulp | grep 8090
+history 
+systemctl stop firewalld
+systemctl stop nginx
+systemctl stop app
+systemctl status nginx
+systemctl start  nginx
+systemctl start  app
+systemctl status nginx
+pip3.7 install pymysql
+cd /opt/
+ll
+mkdir server_status
+cd server_status/
+vim app.py
+pip3.7 install flask_sqlalchemy
+vim app.py
+ls -ltrh
+python3.7 app.py 
+/usr/bin/mysqladmin -u root password 'maha'
+/usr/bin/mysqladmin
+/usr/bin/mysqladmin/flush-privileges
+mysql -uroot -pmaha@123
+/usr/bin/mysqladmin -u root password 'maha'
+/usr/bin/mysqladmin -u root -pmaha@123  password 'maha'
+mysql -uroot -pmaha
+vim app.py 
+python3.7 app.py 
+vim app.py 
+mysql -uroot -pmaha@123
+systemctl start mariadb
+mysql -uroot -pmaha@123
+hostname
+mysql -uroot -pmaha@123
+mysql -uroot -pmaha
+df -h
+cd python/
+ll
+vim list2.py
+python list2.py 
+vim list2.py
+python list2.py 
+vim list2.py
+python list2.py 
+vim list2.py
+python list2.py 
+vim list2.py
+python list2.py 
+vim list2.py
+python list2.py 
+vim list2.py
+python list2.py 
+vim list2.py
+python list2.py 
+x for x in range(1,51) if x%3 == 0
+python3.7
+vim l3.py
+python3.7 l3.py
+vim l3.py
+python3.7 l3.py
+python 13.py
+ls -ltrh
+python l3.py
+vim 14.py
+python 14.py
+vim 14.py
+python 14.py
+vim 14.py 
+vim 15.py
+python 15.py 
+vim 15.py
+python 15.py 
+vim 15.py
+python 15.py 
+vim 15.py
+python 15.py 
+vim 15.py
+python 15.py 
+vim 15.py
+vim 16.py
+python 16.py 
+vim for num in range(1,50):
+        if num%3==0 and num%5==0:;            print ("Number is :"%num)
+           print ("FizzBuzz")
+            elif:
+                 num%3==0:
+                 print "Fizzzz"
+                    elif:
+num%5==0:
+                        print "Buzz"
+                        else:
+ls -ltrh
+vim 16.py
+ls -ltrh
+python 16.py
+ls -ltrh
+vim 16.py
+python 16.py
+vim 16.py
+python 16.py
+vim 16.py
+python 16.py
+vim 16.py
+python 16.py
+vim 16.py
+python 16.py
+vim 16.py 
+python 16.py
+vim 16.py 
+python 16.py
+vim 16.py 
+python 16.py
+vim 16.py 
+python 16.py
+vim 16.py 
+python 16.py
+vim 16.py 
+python 16.py
+vim 16.py 
+python 16.py
+python3.7 16.py
+python 16.py
+vim 16.py 
+python3.7 16.py
+vim 16.py 
+python 16.py
+vim 16.py 
+python 16.py
+vim 16.py 
+python 16.py
+vim 16.py 
+python 16.py
+vim 16.py 

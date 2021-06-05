@@ -1,0 +1,28 @@
+---
+ - name: uptime playbook
+   hosts: localhost
+   tasks: 
+    - name: uptime from all hosts
+      command: "uptime"
+      register: uptime_outfile
+    - debug: 
+        var: uptime_outfile.stdout_lines
+    - name: version from all hosts  
+      command: "uname -a"
+      register: ver_outfile
+    - debug:
+        var: ver_outfile.stdout_lines
+
+    - name: disk usage 
+      command: df -h
+      register: disk
+    - debug:
+        var: disk.stdout_lines
+    - name: http service restart 
+      
+      command: "systemctl status httpd"
+      when: ansible_hostname == "localhost"
+      register: httpout
+    - debug:
+        var: httpout.stdout_lines
+...

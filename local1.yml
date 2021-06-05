@@ -1,0 +1,11 @@
+--- 
+- 
+  hosts: "127.0.0.1"
+  tasks: 
+    - 
+      command: uptime
+      name: "Check system time"
+      register: uptime
+    - 
+      debug: var=uptime.stdout
+      name: "hello"

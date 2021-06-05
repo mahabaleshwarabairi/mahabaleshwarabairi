@@ -1,0 +1,9 @@
+Filesystem               Inodes  IUsed   IFree IUse% Mounted on
+devtmpfs                 251671    377  251294    1% /dev
+tmpfs                    255917     33  255884    1% /dev/shm
+tmpfs                    255917    753  255164    1% /run
+tmpfs                    255917     16  255901    1% /sys/fs/cgroup
+/dev/mapper/centos-root 8456192 409340 8046852    5% /
+/dev/sda1                524288    340  523948    1% /boot
+tmpfs                    255917     18  255899    1% /run/user/0
+/dev/sr0                      0      0       0     - /run/media/root/VBox_GAs_6.0.14

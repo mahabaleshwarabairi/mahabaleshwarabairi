@@ -1,0 +1,243 @@
+a='hello'
+var=type(a)
+if (var == str):
+         print ("a is an str")
+else:
+    print ("a is not an str")
+         
+
+
+if type(a) ==str:
+    print ("its string")
+    
+    a=0
+    while a<10:
+        print (a)
+        a+=1
+        
+		s='hello'
+n=len(s)
+for index in range(n):
+    print (s[index],end =' ')
+    
+	
+	for i in range(10):
+    for j in range(i+1,10):
+        print (i,j)
+		
+		for i in range(10):
+    for j in range(i+1,10):
+              print()
+              m=(i*j)
+              print (i,"*",j,"=",m)
+			  
+			  path=r'C:\new\t'
+print (path)
+
+name="A"
+age=20
+s='my name %s and age %s'%(name,age)
+print (s)
+
+name="A"
+age=20
+s='my name {} and age {}'.format(name,age)
+print (s)
+
+
+s='hello'
+a=s[::-1]
+print (a)
+
+
+
+string = "HELLO"
+for i in range(len(string)-1, 0-1, -1):
+    print (string[i])
+
+	
+	full_name='MAHA'
+pos = len(full_name) - 1
+while pos >= 0:
+    print(full_name[pos], end="")
+    pos -= 1
+print()
+
+	
+	 m.strip('B')
+	 m.strip() remove biginin and end space 
+	 
+	 
+	=========
+	val=input('print name and age:')
+mylist=val.split()
+if my_list.isdigit():
+print(f'my name is {my_list[0]} and age is {my_list[1]}')
+else:
+  print('invalid')
+  
+  =======
+  
+  name = input('ENTER NAME AND AGE')
+an=name.split()
+age=an[1]
+print age
+if type(age)==int:
+    pass
+else:
+    print "ENTERED AGE IS NOT INTEGER"
+
+	
+	
+	========================
+	val=input(enter string)
+  c=0
+  int=0
+  t=0
+  for char in val:
+  if char.isalpha():
+  c+1=1
+  elif char.isdigit():
+  int=+1
+  t+=int(char)
+  print ('alpha ',c)
+  print ('int ',i)
+  print ('total ',t)
+	
+ list :
+a=[1,2,3,4,5] 
+a
+del a
+
+for ietm in a:
+print (item)
+for indes in range(len(a):
+==
+for ietm in enumirate(a):
+print (item[1])
+
+
+===
+declare list:
+a=list(())
+
+join sting :
+s='abc'
+a=list(s)
+c=''.join(a)
+
+======
+a is list 
+a.append()
+insert append ,count copy pop
+==========================
+
+a=[1,2,3,'python',5,8,9]
+b=a[3][2]
+print (b)
+for index,item in enumerate(a):
+    if type(item) is str:
+        if 't' in item:
+            print (index,item.index('t'))
+            
+ ================
+ 
+ val=[1,2,1,3,1,4,1]
+while val:
+    print (max(val))
+    val.remove(max(val))
+    
+	
+	
+ 
+ 
+ a=[1,2,3,'python',5,8,9]
+#b=a[3][2]
+#print (b)
+for index,item in enumerate(a):
+    #print (index,item)
+    if type(item) is str:
+        if 't' in item:
+            print (index,item.index('t'))
+            =============
+s=input('ENTER STRING:')
+char=input('enter a char:')
+for index,item in enumerate(s):
+    if item==char:
+        print (index)
+
+===============
+		a=str(input("Enter a string: ")).strip
+temp=a.split()
+for word in temp:
+         print (word[::-1] title(),end='')
+		 
+		 ==========
+
+		 set(a)
+		 
+		 dist
+		 ===============
+ly='jgjdfnasdkljc/sdkvsd/,vmdsv'
+new=''
+for char in ly:
+if char.isllpha or char =='' or char =='\n':
+new +=char.lower()
+newlines=new.split('\n')
+counterdict={}
+for line in newlines:
+words=line.split()
+
+for word in words
+counterDict[word]=counter.Dict.get(word,0)+1
+print counterDict
+
+==========
+def p(l):
+    for i in l:
+        print (i)
+        
+a=[1,2,3,4,5,6,7,8,9,0]
+p(a)
+=========
+
+
+
+[root@onatlrbtcms DOWNLOAD]# cat down.py
+import os
+f1=[line.rstrip() for line in open('1.txt') if line.strip()]
+f2=[line.rstrip() for line in open('2.txt') if line.strip()]
+print (f1,f2)
+a,b='',''
+for i in range(len(f2)):
+        for j in range(len(f1)):
+#               print (f1[j].split(',')[1])
+                if f2[i]==f1[j].split(',')[1]:
+                        print (f1[j].split(',')[0])
+                        a,b=f1[j].split(',')[0],f1[j].split(',')[1]
+                       # print ('https://www.google.com/search='+a+"&"+b)
+                        os.system('wget "http://dist.atlantis.onmobile.com/cfdownloader?DOWNLOADRATE=3072&COMPONENT=RBTCMR&OPERATOR=AIRTELINDIA&CONTENTTYPE=RBT&CLIPID='+a+'&CLIPFILENAME='+b+'.wav"')
+
+#print (a,b)
+==========
+
+
+import os
+f1=[line.rstrip() for line in open ('1.txt') if line.strip()]   list
+f2=[line.rstrip() for line in open ('2.txt'] if line.strip()]   input
+print (f1,f2)
+a=''
+b=''
+for i in range(len(f2)):
+	for j in range(f1)):
+		print (f1[j].split(','[1]
+		if f2[1]==f1[j].split(',')[1]:
+			print (f1[j].split(','[0])
+			a=f1[j].split(',')[0]
+			b=f1[j].split(',')[1]
+			print ('clip id  and wav is is:'+a+)
+
+
+
+                 
+				 

@@ -1,0 +1,185 @@
+- Ansible with Windows
+- Ansible Module Development
+- Ansible Plugins 
+	 - Lookups
+=============================================================
+
+Human --> Ansible Control Server ----> Ansible remote Server(S)
+		ACS				ARS
+		LINUX				WINDOWS
+		PYHON  2.7			DOTNET 4.X + PS 3.0 + WINRM 
+			-----------------------HTTP
+			-----------------------Authentication 
+							Various Mode
+						Authorization
+						port - 5628****
+
+		PY WINRM
+		
+=====================================================================
+BEHAVIOURAL Param.
+------------------
+Inventory.
+
+ACS 
+	13.126.129.250
+https://www.devopsschool.com/tutorial/ansible/ansible-windows-control-setup.html
+
+
+ARS
+	13.233.137.215
+	Administrator
+	Pass - mdFS=TnvI.ke)Gfjty5E%;5J&P7F%mR-
+https://www.devopsschool.com/tutorial/ansible/ansible-windows-remote-setup.html
+=============================================
+
+
+[windows:vars]
+ansible_user=Administrator
+ansible_password=mdFS=TnvI.ke)Gfjty5E%;5J&P7F%mR-
+ansible_connection=winrm
+ansible_winrm_transport=basic
+ansible_winrm_server_cert_validation=ignore
+
+================================================
+Windows ADHOC Commands
+Windows Playbook
+=================================
+	What is the module for Windows.
+	https://docs.ansible.com/ansible/latest/modules/list_of_windows_modules.html
+=====================================================
+cd /root/Ansible-Mexico-Az-June-2020/yourname
+
+Check - 
+	Using ADHOC commands
+	- Create a dir C:\asz\<YOURFIRST>
+	- Create a file C:\asz\<YOURFIRST\Readme.txt
+	- Content of file - You decide.
+
+Assingment 
+================================================================================================
+How to Develop a Module
+============================================
+https://www.devopsschool.com/blog/ansible-module-sample-code-to-work-with-api-example-1/
+
+
+---
+- name: This sets up an httpd webserver
+  hosts: localhost
+
+  tasks:
+
+  - debug:
+      msg: My Name is Rajesh
+  - weather:
+      appkey: fe8f2030bd325e2f9c85a96ab20aaa9f
+      treshold: 2
+    register: output
+
+  - debug:
+      var: output.decision
+
+
+
+  - weather:
+      appkey: fe8f2030bd325e2f9c85a96ab20aaa9f
+      treshold: 6
+
+
+==================================
+
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+  - name: touch without state
+    touch:
+      file: ./me.txt
+    register: touch_out
+  - debug:
+      var: touch_out
+  - name: touchw with state (after create)
+    touch:
+       file: ./me.txt
+       state: present
+  - name: touch with absent
+    touch:
+       file: ./me.txt
+       state: absent
+  - name: touch absent with no file
+    touch:
+      file: ./me.txt
+      state: absent
+
+
+
+#touch.bash
+
+#!/bin/bash
+# import variables from ansible
+source $1
+state=${state:-present}
+if [[ $state == "present" ]]; then
+	if [ ! -e $file ]; then
+		touch $file
+		echo { \"changed\": true }
+		exit 0
+	else
+		echo { \"changed\": false }
+		exit 0
+	fi
+fi
+
+if [[ $state == "absent" ]]; then
+	if [ -e $file ]; then
+		rm $file
+		echo { \"changed\": true }
+		exit 0
+	else
+		echo { \"changed\": false}
+		exit 0
+	fi
+fi
+
+
+==========================
+https://www.devopsschool.com/blog/what-is-ansible-plugins-and-how-to-extend-ansible-through-plugins/
+https://www.devopsschool.com/blog/deep-dive-into-lookup-plugins-in-ansible-with-example/
+https://www.devopsschool.com/blog/deep-dive-into-jinja2-ansible-template-with-example/
+
+==============================================================================================
+QA - 
+
+==========================================
+Notes - https://github.com/devopsschool-training-notes
+Slides - HTML
+PDF - https://www.devopsschool.com/pdf/
+https://www.devopsschool.com/slides/ansible/ 
+Videos	- https://www.devopsschool.com/videos/
+Sample Programs - https://www.devopsschool.com/blog/devopsschool-github-referenece/
+Blogs - https://www.devopsschool.com/blog/?s=ansible+
+Tutorials - http://www.devopsschool.com/tutorial/ansible/ 
+Quiz and Dumps - https://www.devopsschool.com/lms/
+
+
+Not ready
+===================
+Commands - https://www.devopsschool.com/commands/
+https://www.devopsschool.com/shortcuts
+https://www.devopsschool.com/cheatsheets/
+
+
+How to reach out to me?
+============================
+DevOps@Rajeshkumar.xyz
+www.Rajeshkumar.xyz
+
+
+
+
+
+
+
+
+

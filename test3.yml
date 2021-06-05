@@ -1,0 +1,9 @@
+--- 
+ - name: remove /tmp/test_file only if it already exists
+   hosts: localhost
+   tasks:
+    - name: remove /tmp/test_file only if it already exists
+      command: "rm /tmp/maha_test.txt"
+      args:
+       removes: /tmp/maha_test.txt
+...

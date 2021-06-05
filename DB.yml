@@ -1,0 +1,54 @@
+-
+ name: 'Create a backup directory in remote machine and create a backup'
+ hosts: localhost
+ tasks:
+   - include_vars: name_vars.yml
+   -
+      name: 'Create a backup directory in remote machine'
+      file:
+       path: /root/maha/backup
+       state: directory
+       mode: '0755'
+   -
+      name: 'Take a backup of test database as per the timestamp'
+      mysql_db:
+          name: test
+          state: dump
+          login_unix_socket: /var/lib/mysql/mysql.sock
+          login_user: "{{ login_user }}"
+          login_password: "{{ login_password }}"
+          config_file: /etc/my.cnf
+          target: /root/maha/backup/test.{{ansible_date_time.date}}.sql
+   -
+      name: Compress Directory contents
+      become: yes
+      archive:
+        path:  /root/maha/backup/test.{{ansible_date_time.date}}.sql
+        dest: /root/maha/backup/test.{{ansible_date_time.date}}.gz
+        format: gz
+        remove: yes
+
+   -
+      name: 'Copy the backup in destination'
+      copy:
+       src: /root/maha/backup/
+       dest: /opt/maha/
+       
+   -
+      name: find all files that are older than 10 days
+      find:
+        paths: /root/maha/backup/*/
+        patterns: '*.gz'
+        age: '10d'
+        file_type: file
+       
+      register: filesOlderThan10
+
+   - 
+      name: remove older than 10
+      file:
+        path: "{{ item.path }}" 
+        state: absent
+      with_items: "{{ (filesOlderThan10.files) }}"
+
+

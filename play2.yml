@@ -1,0 +1,10 @@
+---
+ - name: hello this is my first playbook
+   hosts: localhost
+   tasks:
+   - name: instaling service
+     yum: name=httpd state=latest
+   - name: starting service
+     service: name=httpd state=started
+...
+

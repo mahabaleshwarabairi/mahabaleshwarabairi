@@ -1,0 +1,20 @@
+---
+ - name: create a file 
+   hosts: localhost
+   tasks:
+    - name: file 
+      command: "touch /tmp/maha.txt"
+      args:
+        creates: "/tmp/maha.txt"
+      register: createif
+    - name: display file make sure its created
+      command: "ls -lrth /tmp/maha.txt"
+      register: displayif
+      when: createif is changed
+    - debug: var=displayif.stdout
+    - name: remove files 
+      command: "rm -vf  /tmp/maha.txt"
+      args:
+          removes: "/tmp/maha.txt"
+      register: removeif
+    

@@ -1,0 +1,14 @@
+---
+ - name: find
+   hosts: localhost
+   tasks:
+    - name: usage of shell command
+      shell: "find /etc/ -name *nfs*"
+      register: find_out
+    - name: I am going to print find output by printing the var contects 
+      debug:
+        var: find_out
+    - name : print
+      debug:
+        msg: "FIND OUTPUT for net* search: {{ find_out.stdout }}"
+

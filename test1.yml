@@ -1,0 +1,11 @@
+---
+ - name: create a file
+   hosts: localhost
+   tasks: 
+     - name: create a new test file only if it doesn't already exist
+       command: touch /tmp/maha_test.txt
+       args: 
+         creates: /tmp/maha_test.txt 
+       register: out
+     - debug:
+        var: out.stdout_lines

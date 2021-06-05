@@ -1,0 +1,14 @@
+---
+ - name: find command
+   hosts: localhost
+   tasks: 
+    - name: find command list 
+      find:
+       paths: /etc
+       patterns: "host"
+       recurse: yes
+      register: findout
+    - debug: 
+        msg: "{{ findout.files[0].path }}"
+        msg: "{{ findout.files[1].path }}"
+       
